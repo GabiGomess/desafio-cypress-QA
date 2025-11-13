@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 import 'cypress-xpath'
 
-describe('Incluir produto no carrinho com sucesso', () => {
+describe('Funcionalidade produto', () => {
   beforeEach(() => {
     cy.visit('lojaebac.ebaconline.art.br');
   })
@@ -98,4 +98,5 @@ describe('Incluir produto no carrinho com sucesso', () => {
     cy.xpath('//p[@class="comment-form-cookies-consent"]/label').should('contain', 'Salvar meus dados neste navegador para a próxima vez que eu comentar.');
     cy.xpath('//p[@class="form-submit"]/input[@name="submit"]').should('be.visible');
   });
+
 });
