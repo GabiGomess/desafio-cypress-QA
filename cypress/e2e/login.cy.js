@@ -2,7 +2,7 @@
 /// <reference types="cypress" />
 import 'cypress-xpath'
 
-context('Funcionalidade Login', () =>{
+describe('Funcionalidade Login', () =>{
 
     beforeEach(() => {
         cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')
@@ -44,4 +44,5 @@ context('Funcionalidade Login', () =>{
  
      cy.get('.woocommerce-error > li').should('contain', 'Erro: A senha fornecida para o e-mail aluno_ebac@teste.com está incorreta. Perdeu a senha?')
      });
+
  })   
